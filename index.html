@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>For You pi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&family=DM+Serif+Display&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="logo" href="#home">For You <i>pi</i></a>
+  <nav aria-label="Navigasi utama">
+    <a href="#home">Home</a><a href="#cerita">Cerita</a><a href="#galeri">Galeri</a>
+  </nav>
+  <button id="theme" aria-label="Ganti mode terang/gelap">🌙</button>
+</div></header>
+
+<main class="wrap" id="home">
+  <!-- ========== EDIT DI SINI: semua teks mudah diganti ========== -->
+  <section class="hero">
+    <div class="petals" aria-hidden="true">
+      <span style="left:8%;top:18%">🌸</span><span style="right:10%;top:14%;animation-delay:-3s">🌷</span>
+      <span style="left:14%;bottom:14%;animation-delay:-5s">✨</span><span style="right:16%;bottom:18%;animation-delay:-2s">🌼</span>
+    </div>
+    <h1>For You pi</h1>
+    <p>Cantik seperti seorang putri, lucu dengan caranya sendiri, dan punya aura seperti seorang ratu.</p>
+  </section>
+
+  <section class="bento" id="galeri" aria-label="Galeri dan cerita">
+    <article class="card photo w2 h2" style="--i:1">
+      <div class="pic" style="background-image:url('foto1.jpeg');background-position:center 20%"></div>
+      <div class="cap">for you ✿</div>
+    </article>
+    <article class="card pink" style="--i:1">
+      <div class="emoji">👑</div>
+      <p class="big">Auranya ratu, tawanya bikin hari candu.</p>
+    </article>
+
+    <article class="card dark" style="--i:2">
+      <h3>Kenapa kamu spesial</h3>
+      <p class="small">Tulus, lucu tanpa berusaha, dan selalu bikin orang merasa diterima.</p>
+    </article>
+
+    <article class="card mint w2" style="--i:3">
+      <h3>Hal-hal favoritmu</h3>
+      <div class="chips"><span>Masih Mencari Tahu</span></div>
+    </article>
+
+    <article class="card photo w2 h2" style="--i:2">
+      <div class="pic" style="background-image:url('foto2.jpeg');background-position:center 15%"></div>
+      <div class="cap">aura ratu 👑</div>
+    </article>
+    <article class="card lilac" style="--i:4">
+      <div class="emoji">😹</div>
+      <p><b>Joks Tipis</b><br>“Katanya jodoh itu cerminan diri. Pantes kamu agak aneh.”</p>
+    </article>
+
+    <article class="card butter" style="--i:5">
+      <h3>Hitung mundur kenal</h3>
+      <p class="big" id="days">21-september-2026</p>
+      <p class="small">sejak kita kenal</p>
+    </article>
+
+    <article class="card peach w2" id="cerita" style="--i:6">
+      <h3>Momen manis</h3>
+      <p>Kayak nya waktu pipi bahas tentang racun pada malam itu deh</p>
+    </article>
+
+    <article class="card lilac w2 h2" style="--i:7">
+      <h3>Cerita pilihan</h3>
+      <p class="hl">“Aku nggak butuh seseorang yang sempurna, aku cuma butuh kamu yang selalu ada.”<b>— dari seorang teman</b></p>
+      <div class="emoji" aria-hidden="true">🌷</div>
+    </article>
+
+    <article class="card dark" style="--i:8">
+      <h3>Pesan untukmu</h3>
+      <button class="pill" id="surprise" style="background:var(--pink);color:#3b2340">Klik aku</button>
+      <p class="small" id="msg" aria-live="polite">Ada kejutan kecil di sini.</p>
+    </article>
+
+    <article class="card pink" style="--i:9">
+      <div class="emoji">🎵</div>
+      <p><b>Playlist</b><br>Cincin – Hindia<br>Everything You Are – Hindia<br>Perfect – Ed Sheeran<br>Treat You Better – Shawn Mendes<br>Bergema Sampai Selamanya – Nadhif Basalamah<br>Ho Hey – The Lumineers</p>
+    </article>
+
+    <article class="card dark w2" style="--i:9">
+      <h3>🎵 Lagu untukmu</h3>
+      <p class="small">Everything You Are — Hindia</p>
+      <button class="pill" id="play" style="background:var(--pink);color:#3b2340;align-self:flex-start">▶ Putar</button>
+      <p class="small" id="audmsg" aria-live="polite"></p>
+      <div class="tracks" id="tracks" role="group" aria-label="Pilih lagu"></div>
+      <audio id="aud" src="musik.mp3" preload="auto" playsinline></audio>
+    </article>
+    <article class="card photo w2 h2" style="--i:3">
+      <div class="pic" style="background-image:url('foto3.jpeg');background-position:center 25%"></div>
+      <div class="cap">tawa yang bikin cerah ☀️</div>
+    </article>
+    <article class="card butter w2 h2" style="--i:11">
+      <div class="emoji">🌷</div>
+      <p class="big">Terima kasih sudah jadi kamu.</p>
+      <p class="small">Semoga harimu selalu semanis senyummu.</p>
+    </article>
+    </section>
+
+  </main>
+
+<footer class="wrap">
+  <span>© 2026 For You pi. Dibuat dengan cinta.</span>
+  <div class="soc"><a href="https://instagram.com/yopiismhrja_" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
